@@ -8,6 +8,7 @@ source:
   fn: PyOpenGL-{{ version }}.tar.gz
   url: https://pypi.python.org/packages/source/P/PyOpenGL/PyOpenGL-{{ version }}.tar.gz
   sha256: 8ea6c8773927eda7405bffc6f5bb93be81569a7b05c8cac50cd94e969dce5e27
+  patches: shineness.patch
 
 build:
   noarch: python
