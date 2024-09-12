@@ -1,6 +1,13 @@
 conda_forge_output_validation: true
+
 github:
+  user_or_org: cryoem
+  repo_name: eman-feedstock
   branch_name: main
   tooling_branch_name: main
+
 conda_build:
   pkg_format: '2'
+
+provider:
+  linux: github_actions
