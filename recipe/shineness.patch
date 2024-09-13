@@ -1,0 +1,19 @@
+diff --git a/OpenGL/GL/exceptional.py b/OpenGL/GL/exceptional.py
+index 4d08378..a21261f 100644
+--- a/OpenGL/GL/exceptional.py
++++ b/OpenGL/GL/exceptional.py
+@@ -177,10 +177,10 @@ def glMaterial( faces, constant, *args ):
+         glMaterialf( faces, constant, *args )
+     """
+     if len(args) == 1:
+-        arg = GLfloatArray.asArray( args[0] )
+-        if arg is None:
+-            raise ValueError( """Null value in glMaterial: %s"""%(args,) )
+-        return full.glMaterialfv( faces, constant, arg )
++        # arg = GLfloatArray.asArray( args[0] )
++        # if arg is None:
++        #     raise ValueError( """Null value in glMaterial: %s"""%(args,) )
++        return full.glMaterialfv( faces, constant, args[0] )
+     else:
+         return full.glMaterialf( faces, constant, *args )
+ 
